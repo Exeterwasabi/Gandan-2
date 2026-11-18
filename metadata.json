@@ -1,0 +1,6 @@
+{
+  "name": "RX ARCHIVE — 機動戰士鋼彈檔案館",
+  "description": "收錄經典鋼彈機體技術規格、動力武裝解析與宇宙世紀編年史的互動式純 HTML/CSS/JavaScript 網頁檔案庫。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

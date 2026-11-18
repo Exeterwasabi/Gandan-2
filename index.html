@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RX ARCHIVE — 機動戰士鋼彈檔案館</title>
+    <meta
+      name="description"
+      content="收錄經典鋼彈機體技術規格、動力武裝解析與宇宙世紀編年史的互動式機體檔案庫。"
+    />
+    <meta property="og:title" content="RX ARCHIVE — 機動戰士鋼彈檔案館" />
+    <meta
+      property="og:description"
+      content="收錄經典鋼彈機體技術規格、動力武裝解析與宇宙世紀編年史的互動式機體檔案庫。"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;700&family=Oswald:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">跳至主要內容</a>
+
+    <!-- 頂部導覽列：嚴格三區單行架構 -->
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a href="#top" class="brand-wordmark">RX ARCHIVE</a>
+
+        <nav class="main-nav" aria-label="主要導覽">
+          <a href="#units" class="nav-link">機體圖鑑</a>
+          <a href="#comparison" class="nav-link">規格對比</a>
+          <a href="#systems" class="nav-link">動力武裝</a>
+          <a href="#timeline" class="nav-link">宇宙編年史</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="#units" class="btn btn-primary btn-sm">瀏覽機體庫</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- 首屏格納庫主視覺 -->
+      <section class="hero-section" aria-labelledby="hero-heading">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="meta-line hero-kicker">
+              <span>宇宙世紀 0079</span>
+              <span aria-hidden="true">·</span>
+              <span>機動戰士技術檔案館</span>
+            </p>
+            <h1 id="hero-heading" class="hero-title">
+              鋼鐵裝甲與精神感應的機體譜系
+            </h1>
+            <p class="hero-desc">
+              系統化收錄從一年戰爭初代原型機 RX-78-2、赤色彗星專用薩克，到搭載精神感應框架與反中子干擾器的指標性機動戰士技術規格與發展脈絡。
+            </p>
+            <div class="hero-cta-group">
+              <a href="#units" class="btn btn-primary">探索機體檔案</a>
+              <a href="#comparison" class="btn btn-ghost">檢視規格矩陣</a>
+            </div>
+          </div>
+
+          <figure class="hero-media-frame">
+            <div class="image-shell image-shell-hero" data-fallback-title="RX-78-2 初代鋼彈整備格納庫">
+              <img
+                src="./src/assets/images/hero_rx78_hangar_1794977707549.jpg"
+                alt="RX-78-2 初代鋼彈佇立於大型鋼骨航空整備格納庫的工程紀實攝影"
+                referrerpolicy="no-referrer"
+                loading="eager"
+              />
+              <div class="image-fallback" aria-hidden="true">
+                <svg viewBox="0 0 64 64" width="44" height="44" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M32 8L42 18V30L50 38V50H14V38L22 30V18L32 8Z" />
+                  <path d="M24 22H40M26 36H38" />
+                </svg>
+                <span>RX-78-2 HANGAR BAY</span>
+              </div>
+            </div>
+            <figcaption class="figure-caption">
+              圖 01 — RX-78-2 初代鋼彈整備格納庫工程視角，全高 18.0 公尺 · 聯邦軍 V 作戰計畫主力機
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- 首屏底部四欄數據總覽列 -->
+        <div class="container">
+          <dl class="kpi-strip" aria-label="檔案館典藏統計">
+            <div class="kpi-item">
+              <dt class="kpi-label">典藏代表機體</dt>
+              <dd class="kpi-value tabular-nums">05 架</dd>
+            </div>
+            <div class="kpi-item">
+              <dt class="kpi-label">收錄紀元跨度</dt>
+              <dd class="kpi-value tabular-nums">U.C. 0079 – C.E. 71</dd>
+            </div>
+            <div class="kpi-item">
+              <dt class="kpi-label">機體全高區間</dt>
+              <dd class="kpi-value tabular-nums">17.5 – 22.0 m</dd>
+            </div>
+            <div class="kpi-item">
+              <dt class="kpi-label">核融合爐出力峰值</dt>
+              <dd class="kpi-value tabular-nums">8,826 kW</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <!-- 01. 機體檔案圖鑑 -->
+      <section class="section-block" id="units" aria-labelledby="units-heading">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <h2 id="units-heading" class="section-title">01. 機體檔案圖鑑</h2>
+              <p class="section-subtitle">
+                依陣營、紀元或關鍵字篩選機體，點擊任一檔案可檢視詳細武裝配置並加入規格對比。
+              </p>
+            </div>
+          </div>
+
+          <!-- 篩選與搜尋工具列 -->
+          <div class="toolbar" role="region" aria-label="機體篩選控制項">
+            <div class="filter-tabs" role="tablist" aria-label="機體陣營與紀元分類">
+              <button type="button" class="filter-tab is-active" data-filter="all" role="tab" aria-selected="true">
+                全部機體
+              </button>
+              <button type="button" class="filter-tab" data-filter="federation" role="tab" aria-selected="false">
+                地球聯邦 · 朗德貝爾
+              </button>
+              <button type="button" class="filter-tab" data-filter="zeon" role="tab" aria-selected="false">
+                吉翁公國 · 獨立勢力
+              </button>
+              <button type="button" class="filter-tab" data-filter="uc" role="tab" aria-selected="false">
+                宇宙世紀 (U.C.)
+              </button>
+              <button type="button" class="filter-tab" data-filter="ce" role="tab" aria-selected="false">
+                宇宙紀元 (C.E.)
+              </button>
+            </div>
+
+            <div class="search-field-wrap">
+              <label for="unit-search" class="sr-only">搜尋機體型號、名稱或駕駛員</label>
+              <input
+                id="unit-search"
+                type="search"
+                class="search-input"
+                placeholder="搜尋型號、名稱或駕駛員（例如：RX-93、夏亞）"
+                autocomplete="off"
+              />
+            </div>
+          </div>
+
+          <!-- 機體卡片網格（由 app.js 動態渲染） -->
+          <div id="unit-grid" class="unit-grid" aria-live="polite"></div>
+
+          <!-- 空狀態 -->
+          <div id="unit-empty" class="empty-state" hidden>
+            <p class="empty-title">找不到符合條件的機體檔案</p>
+            <p class="empty-desc">請嘗試更換紀元分類，或清除搜尋關鍵字以顯示全部典藏機體。</p>
+            <button type="button" id="reset-filters-btn" class="btn btn-secondary btn-sm">重設篩選條件</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 02. 機體性能對比實驗室 -->
+      <section class="section-block section-alt" id="comparison" aria-labelledby="comparison-heading">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <h2 id="comparison-heading" class="section-title">02. 機體性能對比實驗室</h2>
+              <p class="section-subtitle">
+                選取兩款不同世代的機動戰士，即時對照動力出力、推力重量比與裝甲設計差異。
+              </p>
+            </div>
+          </div>
+
+          <div class="compare-selectors">
+            <div class="compare-select-group">
+              <label for="compare-select-a" class="compare-label">對照機體 A</label>
+              <select id="compare-select-a" class="compare-select"></select>
+            </div>
+
+            <button type="button" id="swap-compare-btn" class="btn btn-secondary btn-sm compare-swap-btn" aria-label="互換對照機體 A 與 B">
+              互換機體
+            </button>
+
+            <div class="compare-select-group">
+              <label for="compare-select-b" class="compare-label">對照機體 B</label>
+              <select id="compare-select-b" class="compare-select"></select>
+            </div>
+          </div>
+
+          <div id="compare-board" class="compare-board" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <!-- 03. 動力與武裝系統解析 -->
+      <section class="section-block" id="systems" aria-labelledby="systems-heading">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <h2 id="systems-heading" class="section-title">03. 動力與武裝系統解析</h2>
+              <p class="section-subtitle">
+                從米諾夫斯基粒子物理學到精神感應架構，解構支撐機動戰士作戰效能的四大關鍵技術。
+              </p>
+            </div>
+          </div>
+
+          <div class="systems-layout">
+            <div class="systems-menu" role="tablist" aria-label="核心技術系統清單">
+              <button type="button" class="system-nav-item is-active" data-system="reactor" role="tab" aria-selected="true">
+                <span class="system-index tabular-nums">01</span>
+                <span class="system-name">米諾夫斯基超小型核融合爐</span>
+              </button>
+              <button type="button" class="system-nav-item" data-system="psychoframe" role="tab" aria-selected="false">
+                <span class="system-index tabular-nums">02</span>
+                <span class="system-name">精神感應框架 (Psycho-Frame)</span>
+              </button>
+              <button type="button" class="system-nav-item" data-system="phaseshift" role="tab" aria-selected="false">
+                <span class="system-index tabular-nums">03</span>
+                <span class="system-name">相轉移裝甲 (Phase Shift)</span>
+              </button>
+              <button type="button" class="system-nav-item" data-system="beamfunnel" role="tab" aria-selected="false">
+                <span class="system-index tabular-nums">04</span>
+                <span class="system-name">光束兵器與感應砲系統</span>
+              </button>
+            </div>
+
+            <div id="system-detail-panel" class="system-detail-panel" role="tabpanel" aria-live="polite"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 04. 宇宙世紀與鋼彈發展編年史 -->
+      <section class="section-block section-alt" id="timeline" aria-labelledby="timeline-heading">
+        <div class="container">
+          <div class="section-header section-header-row">
+            <div>
+              <h2 id="timeline-heading" class="section-title">04. 宇宙世紀與鋼彈發展編年史</h2>
+              <p class="section-subtitle">
+                追溯機動戰士從雙足步兵載具演進為精神感應兵器的歷史關鍵節點。
+              </p>
+            </div>
+
+            <div class="timeline-era-controls" role="group" aria-label="編年史時期篩選">
+              <button type="button" class="era-btn is-active" data-era="all">全部時期</button>
+              <button type="button" class="era-btn" data-era="uc-early">U.C. 0079–0093</button>
+              <button type="button" class="era-btn" data-era="uc-late">U.C. 0096</button>
+              <button type="button" class="era-btn" data-era="ce">C.E. 71</button>
+            </div>
+          </div>
+
+          <ol id="timeline-list" class="timeline-list" aria-live="polite"></ol>
+        </div>
+      </section>
+    </main>
+
+    <!-- 頁尾 -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <span class="brand-wordmark">RX ARCHIVE</span>
+          <p class="footer-note">
+            純 HTML、CSS 與原生 JavaScript 構建之機動戰士技術檔案館，採用相對路徑與靜態資源架構，可直接部署於 GitHub Pages。
+          </p>
+        </div>
+
+        <nav class="footer-nav" aria-label="頁尾導覽">
+          <a href="#units">機體圖鑑</a>
+          <a href="#comparison">規格對比</a>
+          <a href="#systems">動力武裝</a>
+          <a href="#timeline">宇宙編年史</a>
+        </nav>
+
+        <p class="footer-copy tabular-nums">
+          © 2026 RX ARCHIVE · 機動戰士技術檔案館
+        </p>
+      </div>
+    </footer>
+
+    <!-- 機體詳細技術檔案彈窗 (Dossier Modal) -->
+    <div
+      id="dossier-modal"
+      class="modal-backdrop"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-unit-title"
+      hidden
+    >
+      <div class="modal-panel">
+        <div class="modal-topbar">
+          <div class="meta-line" id="modal-unit-meta"></div>
+          <button type="button" id="modal-close-btn" class="btn-icon" aria-label="關閉機體檔案視窗">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 6L6 18M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="modal-media-col">
+            <div class="image-shell image-shell-modal" id="modal-image-shell">
+              <img id="modal-unit-img" src="" alt="" referrerpolicy="no-referrer" />
+              <div class="image-fallback" aria-hidden="true">
+                <svg viewBox="0 0 64 64" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M32 8L42 18V30L50 38V50H14V38L22 30V18L32 8Z" />
+                </svg>
+                <span>MOBILE SUIT ARCHIVE</span>
+              </div>
+            </div>
+            <p class="figure-caption" id="modal-image-caption"></p>
+
+            <div class="modal-compare-bar">
+              <button type="button" id="modal-set-a-btn" class="btn btn-secondary btn-sm">設為對照機體 A</button>
+              <button type="button" id="modal-set-b-btn" class="btn btn-secondary btn-sm">設為對照機體 B</button>
+            </div>
+          </div>
+
+          <div class="modal-info-col">
+            <h2 id="modal-unit-title" class="modal-title"></h2>
+            <p id="modal-unit-subtitle" class="modal-subtitle"></p>
+
+            <div class="modal-tabs" role="tablist" aria-label="檔案分頁">
+              <button type="button" class="modal-tab is-active" data-modal-tab="overview" role="tab" aria-selected="true">
+                機體概覽與規格
+              </button>
+              <button type="button" class="modal-tab" data-modal-tab="weapons" role="tab" aria-selected="false">
+                武裝與裝備明細
+              </button>
+              <button type="button" class="modal-tab" data-modal-tab="engineering" role="tab" aria-selected="false">
+                結構與開發沿革
+              </button>
+            </div>
+
+            <div id="modal-tab-content" class="modal-tab-content"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./src/app.js"></script>
+  </body>
+</html>
